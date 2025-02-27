@@ -1,7 +1,6 @@
 #install zsh with oh-my-zsh
 sudo pacman -Syu xorg xorg-xinit i3  zsh curl fastfetch firefox ly nano vim neovim code --noconfirm
 sudo systemctl enable ly.service
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 #download neded pkg(s)
 sudo pacman -S btop git python-pywal --noconfirm
@@ -14,5 +13,7 @@ cd i3-dots
 cp -r alacritty i3 polybar yazi ~/.config/
 cp -r walls ~/rice/
 cp .zshrc ~/
+
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 printf "\e[32m%s\e[0m\n" "install the pywalfox extention in firefox and reboot now"
