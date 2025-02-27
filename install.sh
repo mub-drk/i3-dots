@@ -13,5 +13,6 @@ git clone https://github.com/mub-drk/i3-dots.git
 cd i3-dots
 cp -r alacritty i3 polybar yazi ~/.config/
 cp -r walls ~/rice/
+cp .zshrc ~/
 
 printf "\e[32m%s\e[0m\n" "install the pywalfox extention in firefox and reboot now"
