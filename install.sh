@@ -1,5 +1,5 @@
 #install zsh with oh-my-zsh
-sudo pacman -Syu xorg xorg-xinit zsh curl fastfetch firefox ly nano vim neovim code --noconfirm
+sudo pacman -Syu xorg xorg-xinit i3  zsh curl fastfetch firefox ly nano vim neovim code --noconfirm
 sudo systemctl enable ly.service
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
