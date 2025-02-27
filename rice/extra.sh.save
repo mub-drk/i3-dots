@@ -1,0 +1,5 @@
+xrandr --output Virtual1 --mode 1920x1080
+
+polybar &
+xcompmgr &
+feh --randomize --bg-fill ~/path/to/wallpapers/ && wal -q -i "$(grep -oP '(?<=file://).*' ~/.fehbg)"
