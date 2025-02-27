@@ -5,7 +5,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 #download neded pkg(s)
 sudo pacman -S btop git python-pywal --noconfirm
 mkdir ~/yay/ && cd ~/yay/ && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si --noconfirm
-yay -S rofi-git zen-browser-bin polybar-git alacritty-git --noconfirm
+yay -S rofi-git zen-browser-bin polybar-git alacritty-git yazi --noconfirm
 
 #add my config
 
