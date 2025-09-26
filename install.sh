@@ -5,7 +5,7 @@ sudo systemctl enable ly.service
 #download neded pkg(s)
 sudo pacman -S btop git python-pywal --noconfirm
 mkdir ~/yay/ && cd ~/yay/ && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si --noconfirm
-yay -S rofi-git brave polybar-git alacritty-git yazi feh python-pywalfox --noconfirm
+yay -S rofi-git brave-bin polybar-git alacritty-git yazi feh python-pywalfox --noconfirm
 
 #add my config
 git clone https://github.com/mub-drk/i3-dots.git
