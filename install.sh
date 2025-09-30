@@ -1,5 +1,5 @@
 #install zsh with oh-my-zsh
-sudo pacman -Syyu xorg xorg-xinit i3 zsh curl fastfetch firefox ly nano vim neovim code --noconfirm
+sudo pacman -Syyu xorg xorg-xinit i3 zsh curl fastfetch firefox ly nano vim neovim code go --noconfirm
 sudo systemctl enable ly.service
 
 #download neded pkg(s)
