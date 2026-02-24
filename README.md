@@ -2,17 +2,17 @@
 
 ### automatic 
 ---
-#### for fedora 
+#### for **fedora**
 ```bash
 sudo dnf update && sudo dnf install -y git i3 i3status dmenu rofi alacritty && git clone https://github.com/mub-drk/i3-dots && cd i3-dots && cp -r i3 i3status rofi ~/.config/ 
 ```
 
-#### for ubuntu/debian/kali-linux/linux-mint
+#### for **ubuntu/debian/kali-linux/linux-mint**
 ```bash
 sudo apt update && sudo apt install -y git i3 i3status dmenu rofi alacritty && git clone https://github.com/mub-drk/i3-dots && cd i3-dots && cp -r i3 i3status rofi ~/.config/ 
 ```
 
-#### for arch/manjaro
+#### for **arch/manjaro**
 ```bash
 sudo pacmna -Sy --needed --noconfirm git i3 i3status dmenu rofi alacritty && git clone https://github.com/mub-drk/i3-dots && cd i3-dots && cp -r i3 i3status rofi ~/.config/ 
 ```
