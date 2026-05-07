@@ -38,7 +38,7 @@ wireless _first_ {
 tztime local {
     
 	  align = "center"
-    format =   "%a %d-%b-%Y |<span color='#74B9A1'> %I:%M%p </span>"
+    format =   " %a %d-%b-%Y |<span color='#74B9A1'> %I:%M%p </span>"
 }
 
 run_watch VPNC {
