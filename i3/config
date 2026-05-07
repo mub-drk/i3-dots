@@ -1,4 +1,4 @@
-# i3 config file (v4)
+# i3 config file (v5)
 
 set $mod Mod4
 
@@ -177,7 +177,7 @@ bar {
    urgent_workspace   #aa0000 #990000 #ffffff
   }
   #font 
-  font pango: Hack:style=Bold 8
+  font pango: FiraMono Nerd Font 10
   # i3bar position
   position bottom
   # Using custom i3status.conf
@@ -190,11 +190,11 @@ bar {
 
 bindsym $mod+l exec i3lock -c 000000
 bindsym $mod+b exec firefox 
-
-exec_always --no-startup-id feh --bg-fill  ~/walls/john-towner-3Kv48NS4WUU-unsplash.jpg &
+bindsym $mod+Shift+w exec brave-browser
+exec_always --no-startup-id feh --bg-fill  /home/mub/Downloads/jack-white-IEY4Q0Ungu8-unsplash.jpg &
 default_border pixel 0
-#exec_always --no-startup-id  redshift -O 4500K &
-exec_always --no-startup-id  bash /home/mub/.config/i3/weather.sh
+exec --no-startup-id  redshift -O 4500K &
+#exec_always --no-startup-id  bash /home/mub/.config/i3/weather.sh
 
 #vol 
 bindsym $mod+p exec pactl set-sink-volume @DEFAULT_SINK@ +5%
@@ -206,5 +206,5 @@ bindsym $mod+o exec pactl set-sink-volume @DEFAULT_SINK@ -5%
 # bindsym $mod+shift+up resize shrink height 10 px or 10 ppt
 # bindsym $mod+Shift+Right resize grow width 10 px or 10 ppt
 
-
-
+exec --no-startup-id /usr/libexec/xfce-polkit &
+exec --no-startup-id picom --vsync --fade-in-step=1.0 --fade-out-step=1.0 --fade-delta=1 --backend glx
