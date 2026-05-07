@@ -8,12 +8,12 @@ general {
 order += "volume master"
 order += "run_watch VPN"
 order += "memory"
-order += "load"
+order += "cpu_usage" 
 order += "wireless _first_"
 order += "tztime local"
 
 volume master {
-    format = "♪: %volume"
+    format = "♪:%volume "
     format_muted = "%volume"
     device = "default"
     mixer = "Master"
@@ -21,28 +21,24 @@ volume master {
 }
 
 memory {
-    format = "ram: %used"
+    format = " ram : %used "
     threshold_degraded = "10%"
-    format_degraded = "MEMORY: %free"
+    format_degraded = "MEMORY : %free"
 }
 
-load {
-    format = "cpu : %1min"
-}
-
-
+cpu_usage{
+    format = " cpu : %usage "
+  }
 
 wireless _first_ {
     format_up = "<span color='#FFFFFF'> %essid (%quality, %bitrate) </span>"
     format_down = "W: down"
 }
 
-
-
 tztime local {
     
 	  align = "center"
-    format =   "%a %d %b %Y |<span color='#74B9A1'> %I:%M%p </span>"
+    format =   "%a %d-%b-%Y |<span color='#74B9A1'> %I:%M%p </span>"
 }
 
 run_watch VPNC {
@@ -54,5 +50,4 @@ path_exists VPN {
         # path exists when a VPN tunnel launched by nmcli/nm-applet is active
         path = "/proc/sys/net/ipv4/conf/tun0"
 }
-
 
