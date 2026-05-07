@@ -194,7 +194,7 @@ bindsym $mod+Shift+w exec brave-browser
 exec_always --no-startup-id feh --bg-fill  /home/mub/Downloads/jack-white-IEY4Q0Ungu8-unsplash.jpg &
 default_border pixel 0
 exec --no-startup-id  redshift -O 4500K &
-#exec_always --no-startup-id  bash /home/mub/.config/i3/weather.sh
+#exec_always --no-startup-id exec bash /home/mub/.config/i3/weather.sh
 
 #vol 
 bindsym $mod+p exec pactl set-sink-volume @DEFAULT_SINK@ +5%
