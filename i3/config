@@ -133,7 +133,7 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+q exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -191,11 +191,16 @@ bar {
 bindsym $mod+l exec i3lock -c 000000
 bindsym $mod+Shift+l exec systemctl suspend
 bindsym $mod+b exec firefox 
+bindsym $mod+Shift+e exec nautilus
 bindsym $mod+Shift+w exec brave-browser
 exec_always --no-startup-id feh --bg-fill  /home/mub/Downloads/jack-white-IEY4Q0Ungu8-unsplash.jpg &
 default_border pixel 0
 exec --no-startup-id  redshift -O 4500K &
 #exec_always --no-startup-id exec bash /home/mub/.config/i3/weather.sh
+
+# Screemnshot
+exec --no-startup-id flameshot
+bindsym Print exec "flameshot gui"
 
 #vol 
 bindsym $mod+p exec pactl set-sink-volume @DEFAULT_SINK@ +5%
